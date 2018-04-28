@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Requisito2_calibracao
+
+# Build rule for target.
+Requisito2_calibracao: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Requisito2_calibracao
+.PHONY : Requisito2_calibracao
+
+# fast build rule for target.
+Requisito2_calibracao/fast:
+	$(MAKE) -f CMakeFiles/Requisito2_calibracao.dir/build.make CMakeFiles/Requisito2_calibracao.dir/build
+.PHONY : Requisito2_calibracao/fast
+
+#=============================================================================
 # Target rules for targets named Requisito1
 
 # Build rule for target.
@@ -150,6 +163,33 @@ Requisito1.cpp.s:
 	$(MAKE) -f CMakeFiles/Requisito1.dir/build.make CMakeFiles/Requisito1.dir/Requisito1.cpp.s
 .PHONY : Requisito1.cpp.s
 
+Requisito2_calibracao.o: Requisito2_calibracao.cpp.o
+
+.PHONY : Requisito2_calibracao.o
+
+# target to build an object file
+Requisito2_calibracao.cpp.o:
+	$(MAKE) -f CMakeFiles/Requisito2_calibracao.dir/build.make CMakeFiles/Requisito2_calibracao.dir/Requisito2_calibracao.cpp.o
+.PHONY : Requisito2_calibracao.cpp.o
+
+Requisito2_calibracao.i: Requisito2_calibracao.cpp.i
+
+.PHONY : Requisito2_calibracao.i
+
+# target to preprocess a source file
+Requisito2_calibracao.cpp.i:
+	$(MAKE) -f CMakeFiles/Requisito2_calibracao.dir/build.make CMakeFiles/Requisito2_calibracao.dir/Requisito2_calibracao.cpp.i
+.PHONY : Requisito2_calibracao.cpp.i
+
+Requisito2_calibracao.s: Requisito2_calibracao.cpp.s
+
+.PHONY : Requisito2_calibracao.s
+
+# target to generate assembly for a file
+Requisito2_calibracao.cpp.s:
+	$(MAKE) -f CMakeFiles/Requisito2_calibracao.dir/build.make CMakeFiles/Requisito2_calibracao.dir/Requisito2_calibracao.cpp.s
+.PHONY : Requisito2_calibracao.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Requisito2_calibracao"
 	@echo "... Requisito1"
 	@echo "... Requisito1.o"
 	@echo "... Requisito1.i"
 	@echo "... Requisito1.s"
+	@echo "... Requisito2_calibracao.o"
+	@echo "... Requisito2_calibracao.i"
+	@echo "... Requisito2_calibracao.s"
 .PHONY : help
 
 
