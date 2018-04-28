@@ -1,3 +1,0 @@
-/home/gustavo/git/Computer Vision/Stereo_Camera/CMakeFiles/edit_cache.dir
-/home/gustavo/git/Computer Vision/Stereo_Camera/CMakeFiles/rebuild_cache.dir
-/home/gustavo/git/Computer Vision/Stereo_Camera/CMakeFiles/Requisito1.dir
