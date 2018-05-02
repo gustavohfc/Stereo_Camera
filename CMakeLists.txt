@@ -11,11 +11,12 @@ project( Projeto1 )
 find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
-#add_library(common common.cpp common.h)
+add_library(common common.cpp common.h)
 
 add_executable( Requisito1 Requisito1.cpp )
 add_executable( Requisito2_calibracao Requisito2_calibracao.cpp )
+add_executable( Requisito2 Requisito2.cpp )
 
-target_link_libraries( Requisito1 ${OpenCV_LIBS} )
-target_link_libraries( Requisito2_calibracao ${OpenCV_LIBS} )
-#target_link_libraries( Requisito1 ${OpenCV_LIBS} common )
+target_link_libraries( Requisito1 ${OpenCV_LIBS} common )
+target_link_libraries( Requisito2_calibracao ${OpenCV_LIBS} common )
+target_link_libraries( Requisito2 ${OpenCV_LIBS} common )
